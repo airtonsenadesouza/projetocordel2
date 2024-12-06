@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+    --cor-primary: #1a1a1a;
+    --cor-secundary: #f1f1f1;
+    --cor-accent: #FF5733;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--fonte1);
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+header {
+    background-color: var(--cor-primary);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-family: var(--fonte2);
+    font-size: 6vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 20px;
+    line-height: 1.8;
+    font-family: var(--fonte3);
+    font-size: 1.6rem;
+}
+
+section.normal {
+    background-color: var(--cor-secundary);
+    color: var(--cor-primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section.imagem {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+    padding: 80px 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+
+section#imagem01 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+section#imagem02 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+section .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section p {
+    font-size: 2vw;
+    line-height: 2em;
+}
+
+footer {
+    background-color: var(--cor-primary);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 12vw;
+    }
+
+    section p {
+        font-size: 4vw;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 14vw;
+    }
+
+    section p {
+        font-size: 5vw;
+    }
+}
